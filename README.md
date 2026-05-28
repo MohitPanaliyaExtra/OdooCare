@@ -19,21 +19,26 @@ No more blind installations. Test first, then deploy.
 
 ## Features
 
-- Drag-and-drop or browse for ZIP files
+- **Drag-and-drop or browse** for Odoo module ZIP files
 - Parses all `__manifest__.py` files inside the archive
-- Resolves dependency graph against Odoo 17 CE official module list
+- Resolves dependency graph against **Odoo 17 CE** official module list (300+ modules)
 - Scans Python source for undeclared imports
-- Exports Markdown report
+- Exports detailed **Markdown report**
 - Desktop-native (Windows, macOS, Linux)
+
+## Tech Stack
+
+- **Backend:** Rust + Tauri 2
+- **Frontend:** Svelte 5 + Tailwind CSS 4 + Vite
+- **Dependency resolution:** petgraph (topological sort)
+- **Python parsing:** rustpython-parser
 
 ## Build
 
 ```bash
 # Prerequisites: Rust, Node.js, and Tauri CLI
-cd src
-npm install
-cd ../src-tauri
-npm install
+cd src && npm install
+cd ../src-tauri && npm install
 cargo tauri build
 ```
 

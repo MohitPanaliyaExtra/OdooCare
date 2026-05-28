@@ -46,8 +46,8 @@
     "publisher": "OdooCARE",
     "copyright": "Copyright © 2026 OdooCARE. All rights reserved.",
     "category": "DeveloperTool",
-    "shortDescription": "Odoo Module Dependency Analyzer for Community Edition",
-    "longDescription": "A desktop tool to analyze Odoo CE module ZIPs — resolve dependency order, detect missing modules, check internal/external dependencies, and catch undeclared Python imports — so you never crash Odoo after installing untested modules.",
+    "shortDescription": "Odoo CE Module Dependency Analyzer — Prevent crashes from untested module installations",
+    "longDescription": "A desktop tool that analyzes Odoo Community Edition module ZIP files before installation. It resolves dependency order via topological sort, detects missing Odoo modules, checks internal/external dependencies, identifies undeclared Python imports, and generates detailed reports — so you never crash Odoo after installing untested modules from OCA or third-party sources.",
     "licenseFile": "../LICENSE",
     "windows": {
       "certificateThumbprint": null,

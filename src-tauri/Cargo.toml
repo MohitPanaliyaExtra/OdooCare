@@ -2,7 +2,7 @@
 name = "odoocare"
 version = "1.0.0"
 edition = "2021"
-description = "Odoo Module Dependency Analyzer — Test modules before installation to prevent Odoo crashes"
+description = "Desktop app to analyze Odoo CE module ZIPs — resolve dependency order, detect missing modules, and prevent Odoo crashes after untested installations"
 authors = ["OdooCARE Team"]
 license = "MIT"
 repository = "https://github.com/MohitPanaliyaExtra/OdooCare"
