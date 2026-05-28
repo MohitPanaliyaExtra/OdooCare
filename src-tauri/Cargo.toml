@@ -2,11 +2,11 @@
 name = "odoocare"
 version = "1.0.0"
 edition = "2021"
-description = "Odoo 17 CE Module Dependency Analyzer — Desktop & Mobile"
+description = "Odoo Module Dependency Analyzer — Test modules before installation to prevent Odoo crashes"
 authors = ["OdooCARE Team"]
 license = "MIT"
-repository = "https://github.com/odoocare/analyzer"
-homepage = "https://odoocare.com"
+repository = "https://github.com/MohitPanaliyaExtra/OdooCare"
+homepage = "https://github.com/MohitPanaliyaExtra/OdooCare"
 
 [package.metadata.tauri]
 bundle.identifier = "com.odoocare.analyzer"
