@@ -1,0 +1,35 @@
+[package]
+name = "odoocare"
+version = "1.0.0"
+edition = "2021"
+description = "Odoo 17 CE Module Dependency Analyzer — Desktop & Mobile"
+authors = ["OdooCARE Team"]
+license = "MIT"
+repository = "https://github.com/odoocare/analyzer"
+homepage = "https://odoocare.com"
+
+[package.metadata.tauri]
+bundle.identifier = "com.odoocare.analyzer"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+thiserror = "1"
+walkdir = "2"
+tempfile = "3"
+pyimportparse = "0.2"
+rustpython-parser = "0.4"
+phf = { version = "0.12", features = ["macros"] }
+petgraph = "0.6"
+zip = { version = "2.3", features = ["deflate", "bzip2"] }
+tauri-plugin-fs = "2"
+tauri-plugin-dialog = "2"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
